@@ -18,19 +18,22 @@
   </head>
   <body>
     <main id="product-card">
-      <div id="img-wrapper">
+      <div id="img-wrapper" class="">
         <img src="assets/imgs/chairImg.png" alt="Imagem do produto sofá" />
-        <a href="#"
-          ><img
+        <button onclick="handleImgCard()">
+          <img
             src="assets/imgs/360Vector.svg"
             alt="Botão para exibição em 360°"
-        /></a>
+          />
+        </button>
       </div>
       <div id="description-wrapper">
-        <span>CÓDIGO: 42404</span>
-        <h1>Sofá Margot II - Rosé</h1>
-        <p>R$ 4.000</p>
-        <button>ADICIONAR À CESTA</button>
+        <div id="text-wrapper">
+          <span>CÓDIGO: 42404</span>
+          <h1>Sofá Margot II - Rosé</h1>
+          <p>R$ 4.000</p>
+        </div>
+        <button onclick="addToCart()">ADICIONAR À CESTA</button>
       </div>
     </main>
     <script src="script.js"></script>

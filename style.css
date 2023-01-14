@@ -18,28 +18,63 @@ body {
 
 #img-wrapper {
   position: relative;
+  max-width: 449px;
 }
 
-#img-wrapper > a {
+#img-wrapper > img {
+  max-width: 449px;
+}
+
+#img-wrapper > button {
   position: absolute;
   top: 8px;
   right: 50px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 #description-wrapper {
+  font-family: "Lato", sans-serif;
   color: #271a45;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-#description-wrapper span {
-  font-family: "Lato", sans-serif;
+#text-wrapper span {
   font-weight: 300;
   font-size: 10px;
 }
 
-#description-wrapper h1 {
+#text-wrapper h1 {
   margin: 12px 0;
+  font-family: "Crimson Pro", serif;
+  font-weight: 600;
+  font-size: 32px;
 }
 
-/* 
-font-family: 'Crimson Pro', serif;
-font-family: 'Lato', sans-serif; */
+#text-wrapper p {
+  font-weight: 400;
+}
+
+#description-wrapper button {
+  padding: 8px 16px;
+  max-width: 150px;
+  cursor: pointer;
+
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+
+  background-color: #d9cdf7;
+  border: 0.5px solid #271a45;
+  border-radius: 999px;
+
+  transition: background-color 0.2s;
+}
+
+#description-wrapper button:hover {
+  background-color: #c8b4f9;
+}
